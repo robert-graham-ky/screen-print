@@ -15,7 +15,7 @@ export default function () {
             <SlideShow />
           </div>
           <div className="product-list" id="apparel">
-
+            Hi
           </div>
           <div className="product-list" id="logos">
 
