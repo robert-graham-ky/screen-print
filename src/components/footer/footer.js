@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router";
 import { NavLink } from "react-router-dom";
+import Logo2 from "../../../static/images/logos/Nice Logo For Crackshot 001.png";
 
 const Footer = (props) => {
   return (
@@ -20,11 +21,14 @@ const Footer = (props) => {
         <div className="footer-link-wrapper">
           {
             <NavLink exact to="/contact" activeClassName="nav-link-active">
-              About
+              Contact
             </NavLink>
           }
         </div>
 
+        <div className="footer-logo">
+          <img src={Logo2} alt="Logo" />
+        </div>
       </div>
       <div className="copyright-wrapper">
         &copy; Example Inc &#124; All rights reserved

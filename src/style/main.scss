@@ -1,3 +1,10 @@
+@import "./footer.scss";
+@import "./desktop.scss";
+@import "./navigation.scss";
+@import "./tablet.scss";
+@import "./variables.scss";
+@import "./slide-show.scss";
+
 html {
     font-size: 62.5%; // 1rem is 10px
 }

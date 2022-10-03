@@ -10,7 +10,7 @@ export default class Contact extends Component{
                     <Navbar />
                 </div>
                 <div className="contact-center">
-
+                    
                 </div>
                 <div className="footer">
                     <Footer />
