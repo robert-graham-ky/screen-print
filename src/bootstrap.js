@@ -13,13 +13,11 @@ import "./style/main.scss";
 
 function main() {
   root.render(
-    <React.StrictMode>
       <Provider store={createStoreWithMiddleware(reducers)}>
         <BrowserRouter>
           <App />
         </BrowserRouter>
       </Provider>
-    </React.StrictMode>
   );
 }
 

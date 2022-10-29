@@ -1,13 +1,28 @@
 .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 100px;
+  padding: 40px;
+  margin-bottom: 40px;
+
   .left-nav-wrapper {
+    display: flex;
+    flex-direction: column;
   }
   .mid-nav-wrapper {
-    img{
-        width: 100px;
-        height:100px;
+    @media only screen and (max-width: 360px) {
+      display: none;
+    }
+    img {
+      width: 150px;
+      height: 70px;
+      @media only screen and (min-width: 650px) {
+        width: 250px;
+        height: 100px;
+      }
     }
   }
   .right-nav-wrapper {
-
   }
 }
