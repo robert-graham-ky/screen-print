@@ -6,12 +6,16 @@
   justify-content: center;
   align-items: center;
   .carousel-inner {
-    min-width: calc(66vw);
-    max-width: calc(66vw);
+    min-width: calc(90vw);
+    max-width: calc(90vw);
     img {
-      min-width: calc(66vw);
-      max-width: calc(66vw);
-      height: 400px;
+      min-width: calc(90vw);
+      max-width: calc(90vw);
+      height: calc(90vw);
+    }
+    .information{
+      min-width: calc(90vw);
+      max-width: calc(90vw);
     }
   }
 }
