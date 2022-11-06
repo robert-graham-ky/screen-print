@@ -5,11 +5,7 @@ import Logo from "../../../static/images/logos/CrackShot Retro001.png";
 const Navbar = (props) => {
   return (
     <div className="nav-wrapper">
-      {
-        //remember to hide the left anchor links on contact page
-        //the elements they link do not exist on contact page
-      }
-      <div className="left-nav-wrapper">
+      <div className="left-nav-wrapper" id="left-nav-wrapper">
         <a href="#decals">Sticker Decals</a>
         <a href="#apparel">Apparel</a>
         <a href="#logos">Logo Designing</a>

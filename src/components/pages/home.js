@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import SlideShow from "../slides/slide-show";
 import Navbar from "../navigation/navbar";
@@ -7,7 +7,20 @@ import Slide1 from "../../../static/images/FAMILY REUNION MOCKUP 002.png";
 import Slide2 from "../../../static/images/backshirt002.jpg";
 import Slide3 from "../../../static/images/backshirt002.jpg";
 
+function handleSizeChange(query) {
+  let el = document.getElementById("left-nav-wrapper");
+  if (query.matches) {
+    el.style.display = "flex";
+  } else {
+    el.style.display = "none";
+  }
+}
 export default function () {
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 450px)");
+    mediaQuery.addListener(handleSizeChange);
+    handleSizeChange(mediaQuery);
+  });
   return (
     <div className="homepage-wrapper">
       <div className="homepage-center">
