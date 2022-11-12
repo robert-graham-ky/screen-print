@@ -7,10 +7,24 @@
   margin-bottom: 40px;
 
   .left-nav-wrapper {
-    display: none;
-    @media only screen and (min-width: 450px) {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    a {
+      height: 22px;
+      margin: auto 10px;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      @media only screen and (min-width: 650px) {
+        margin: auto 22px;
+        font-size: 2.2rem;
+      }
+      transition: 0.5s ease-in-out;
+      border-bottom: 1px solid transparent;
+      color: $text-color;
+      text-decoration: none;
+      &:hover {
+        color: $active-text-color;
+      }
     }
   }
   .mid-nav-wrapper {
@@ -18,8 +32,8 @@
       width: 250px;
       height: 100px;
       @media only screen and (min-width: 650px) {
-        width: 250px;
-        height: 100px;
+        width: 300px;
+        height: 120px;
       }
     }
   }
@@ -42,7 +56,6 @@
         text-decoration: none;
         &:hover {
           color: $active-text-color;
-          
         }
       }
 
